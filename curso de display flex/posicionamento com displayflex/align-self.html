@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fundamentos - align-self</title>
+
+    <style>
+        .container{
+            max-width: 350px;
+            border: 2px solid black;
+            display: flex;
+            
+            margin-bottom: 10px;
+        
+        }
+
+        .align-container{
+            align-items: flex-start;
+        }
+
+        .item{
+            background-color:green;
+            color: black;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+
+        }
+
+        .center{
+            align-self: center;
+
+        }
+        .start{
+            align-self: flex-start;
+        }
+
+        .end{
+            align-self: flex-end;
+        }
+
+        .auto{
+            align-self: auto;
+
+        }
+
+        .stretch{
+            align-self: stretch;
+        }
+
+        .baseline{
+            align-self: baseline;
+        }
+        .direction{
+            flex-direction: column;
+        }
+    </style>
+
+</head>
+<body>
+    <section class="container align-container">
+        <div class="item auto">aaa</div>
+        <div class="item auto">123</div>
+        <div class="item auto">lotrem sei la o que que fala</div>
+        <div class="item auto">item 4</div>
+    </section>
+
+    <section class="container">
+        <div class="item stretch">aaa</div>
+        <div class="item start">123</div>
+        <div class="item center">lotrem sei la o que que faladadadadadaa</div>
+        <div class="item end">item 4</div>
+    </section>
+
+    <section class="container">
+        <div class="item stretch">aaa</div>
+        <div class="item start">123</div>
+        <div class="item auto">lotrem sei la o que que faladadadadadaa</div>
+        <div class="item center">item 4</div>
+        <div class="item start">item 4</div>
+        <div class="item end">item 4</div>
+        <div class="item stretch">item 4</div>
+    </section>
+
+    <p>column</p>
+
+    <section class="container direction">
+        <div class="item stretch">aaa</div>
+        <div class="item start">123</div>
+        <div class="item auto">lotrem sei la o que que faladadadadadaa</div>
+        <div class="item center">item 4</div>
+        <div class="item start">item 4</div>
+        <div class="item end">item 4</div>
+        <div class="item stretch">item 4</div>
+    </section>
+
+
+    <section class="container direction">
+        <div class="item stretch">aaa</div>
+        <div class="item start">123</div>
+        <div class="item auto">lotrem sei la o que que faladadadadadaa</div>
+        <div class="item center">item 4</div>
+        <div class="item start">item 4</div>
+        <div class="item end">item 4</div>
+        <div class="item stretch">item 4</div>
+    </section> 
+    
+    <section class="container direction">
+        <div class="item stretch">aaa</div>
+        <div class="item start">123</div>
+        <div class="item auto">lotrem sei la o que que faladadadadadaa</div>
+        <div class="item center">item 4</div>
+        <div class="item start">item 4</div>
+        <div class="item end">item 4</div>
+        <div class="item stretch">item 4</div>
+    </section>
+
+</body>
+</html>

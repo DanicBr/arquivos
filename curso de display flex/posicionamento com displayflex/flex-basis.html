@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .flex-container{
+            border: 2px solid black;
+            max-width: 300px;
+            display: flex;
+
+        }
+
+        .item{
+            background-color: chocolate;
+            text-align: center;
+            color: white;
+            margin: 5px;
+
+        }
+
+        .bauto{
+            flex-basis: auto;
+
+        }
+
+        .fg-1{
+            flex-grow: 1;
+        }
+
+        .fg-2{
+            flex-grow: 2;
+        }
+
+        .fg-3{
+            flex-grow: 3;
+        }
+
+        .b-0{
+            flex-basis: 0;
+        }
+
+        .w100{
+            flex-basis: 100px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <p>auto</p>
+    <div class="flex-container">
+        <div class="item bauto fg-1">a</div>
+        <div class="item bauto fg-1">bbb</div>
+        <div class="item bauto fg-1">c</div>
+        <div class="item bauto fg-1">def</div>
+    </div>
+
+    <p> 0 (zero)</p>
+    <div class="flex-container">
+        <div class="item b-0 fg-1">aaaaaa</div>
+        <div class="item b-0 fg-1">bbb</div>
+        <div class="item b-0 fg-1">c</div>
+        <div class="item b-0 fg-1">def</div>
+        
+    </div>
+
+    <p> basis + width </p>
+    <div class="flex-container">
+        <div class="item w100">aaa</div>
+        <div class="item w100">bbb</div>
+        <div class="item w100">ccc</div>
+        <div class="item w100">ddd</div>
+        
+    </div>
+
+</body>
+</html>
