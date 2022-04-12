@@ -1,0 +1,186 @@
+* {
+        font-family: arial;
+        color:#FFFFFF;
+    }
+
+
+
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: #87CEFA;
+    }
+
+    .topo{
+        height: 50px;
+        background-color: #30302f;
+    }
+
+    .topointerior{
+        width: 1000px;
+        margin: auto;
+        background-color: #c6c6c6; 
+    }
+    .logomarca{
+        float: left;
+        width: 70px;
+    }
+    .logomarca img{
+        width: 100%;
+        height: 100%;
+
+    }
+
+
+    .menu{
+        float: right;
+
+
+
+    }
+
+
+
+    .menu ul,
+    menu li{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+
+
+
+    .menu li{
+        float:right;/* gruda na direita*/
+        padding-left: 10px;
+        padding-right: 10px;
+        line-height: 50px;
+        font-size: 14px; 
+        text-shadow: 1px 1px 2px black;
+        /* cursor:pointer; coloca a maozinha mesmo sem link*/
+    }
+
+
+
+    .menu li:hover {
+        background-color: #FF4500;
+    }
+    .menu a {
+        text-decoration: none;
+    }
+
+
+
+    .banner{
+        height: 300px;
+        background-color: #347aba;
+    }
+    .verde{
+        background-color: #00ff7f
+    }
+
+
+
+    .bannerinterior{
+        width: 1000px;
+        margin: auto; 
+
+    }
+    .banneresquerda{
+        float: left; 
+    }
+
+
+
+    .bannerdireita{
+        float: right;
+    }
+
+
+
+    .bannerdireita img{
+        margin-right: 55px
+    }
+
+
+
+    .frase1{
+        font-size: 48px; 
+        color:#ffffff;
+        margin-top:60px;
+        margin-left: 40px;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+    }
+
+
+
+    .frase2{
+        font-size: 20PX; 
+
+        color:#ffffff;
+        margin-left: 40px;
+    }
+
+
+
+    .botao{
+        background-color: #ffc001; 
+        width:282px;
+        height:56px; 
+        font-size: 20px; 
+        text-align: center;
+        line-height:56px;
+        margin-top:20px;
+        cursor:pointer; 
+        border-radius:5px;
+        margin-left: 40px; 
+        box-shadow: 5px 5px 5px rgba(100,100,100, 0.8)
+    /*sombra e o rgba: os tres primeiros numeros vao de 0 a 255 e sao o RGB
+    o ultimo é o Alpha que controla a transparencia*/
+    }
+
+
+
+    .botao a{
+        text-decoration: none; 
+        color: #000; 
+    }
+
+
+
+    .outrosprodutos{
+        height: 50px; 
+        color: #000; 
+        font-size: 20px; 
+        text-align: center; 
+        line-height: 50px; 
+        font-weight: 700;
+    }
+
+    .fotos img{
+
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px rgba(100,100,100,0.5);
+
+
+
+    }
+
+    .fotosinterior{
+        width: 1000px;
+        margin-left:200px ;
+        margin-bottom: 20px;
+
+    }
+
+    .rodape{
+        line-height: 50px;
+        height:50px;
+        background-color:#347aba ;
+        text-shadow: 2px 1px 2px black;
+        text-align: center;
+
+    }
