@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: rgb(84, 155, 236);
+            color: white;
+            font: normal 18pt arial;
+        }
+
+        .MarcaEx{
+          background-color: rgb(12, 233, 12);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Treinando a seleção de elementos do dom</h1>
+    
+    <p>os 5 metodos de navageção(tem mais!!).</p>
+    <ul>
+      
+      <li>Marca</li>
+      <li>ID</li>
+      <li>Nome</li>
+      <li>Classe</li>
+      <li>Seletor</li>
+    </ul>
+    
+    <p>para os testes:</p>
+    <ul>
+      <li>teste da Marca</li>
+      <li id="IDteste">teste do ID</li>
+      <li name="nometeste">teste do Nome</li>
+      <li class="classeteste">teste da Classe</li>
+      <li id="seletorid">teste do Seletor com id</li>
+      <li class="seletorclass">teste do Seletor  com class</li>
+    </ul>
+
+    <h2>Marca</h2>
+    <p>O comando é: 'getElementsByTagName('')[]'</p>
+    <h3>testando 'marca':</h3>
+    
+      <script>
+        var marca = window.document.getElementsByTagName('li')[5]
+        window.document.write(marca.innerHTML)
+
+        
+      </script>
+    <h2>Id</h2>
+    <p>O comando é: 'getElementById('')'</p>
+    <h3>testando 'ID':</h3>
+
+    <script>
+      var di = window.document.getElementById('IDteste')
+      window.document.write(di.innerText)
+
+    </script>
+
+    <h2>Nome</h2>
+    <p>O comando é: 'getElementsByName('')[]</p>
+    <h3>testando 'Nome'</h3>
+
+    <script>
+      var nome = window.document.getElementsByName('nometeste')[0]
+      document.write(nome.innerHTML)
+
+    </script>
+
+    <h2>classe</h2>
+    <p>O comando é: 'getElementsByClassName('')[]</p>
+    <h3>testando 'classe'</h3>
+
+    <script>
+      var classe = document.getElementsByClassName('classeteste')[0]
+      document.write(classe.innerHTML)
+
+    </script>
+
+    <h2>seletor</h2>
+    <p>O comando é: 'querySelector ou querySelectorAll()</p>
+    <h3>testando 'Seletor'</h3>
+
+    <script>
+      var seletorid = document.querySelector('li#seletorid')
+      document.write(seletorid.innerText)
+    </script>
+    <br>
+    <script>
+      var seletorclass = document.querySelector('li.seletorclass')
+      document.write(seletorclass.innerText)
+    </script>
+
+    <script class="testando style">
+      classe.style.color = 'black' 
+    </script>
+
+    
+</body>
+</html>

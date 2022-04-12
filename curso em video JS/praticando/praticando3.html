@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>treinando function</title>
+    <style>
+        #normal{
+        font: normal 20px arial;
+        background-color:blueviolet ;
+        width: 500px;
+        height: 500px;
+        text-align: center;
+        line-height: 500px;
+        }
+    </style>
+
+</head>
+<body>
+    <center>
+    <div id="normal">
+        normal
+    </div>
+    </center>
+    <script>
+        var mudou = window.document.getElementById('normal')
+        mudou.addEventListener('click',clicou)
+        mudou.addEventListener('mouseenter',entrou)
+        mudou.addEventListener('mouseout',saiu)
+        mudou.addEventListener('mousedown',pressionar)
+
+
+        function clicou(){
+            mudou.innerHTML = 'vc clicou'
+        }
+
+        function entrou(){
+            mudou.innerHTML = 'o mouse entrou'
+        }
+
+        function saiu(){
+            mudou.innerHTML = 'o mouse saiu'
+        }
+
+        function pressionar(){
+            mudou.innerHTML = 'vc esta pressionando'
+        }
+    </script>
+</body>
+</html>
