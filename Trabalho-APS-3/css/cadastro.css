@@ -1,0 +1,59 @@
+@import url(global.css);
+
+.quadradocentro{
+    display: flex; /*deixa tudo dentro de uma "sub-caixa"*/
+    align-items: left; /*alinha qualquer coisa no centro verticalmente (só possivel utilizar com display)*/
+    justify-content: space-between ; /*alinha qualquer coisa no centro horizonatalmente (só possivel utilizar com display)*/
+    background-color: #dc143c; /*cor de fundo (carmesin <3)*/
+    margin: 40px 0 80px 0;
+    border-radius: 20px; /*faz com que as bordas da div fiquem arredondadas*/
+}
+
+.titulodosite{
+   width: 40%; 
+   margin: 0 45px;
+} 
+
+.titulo{
+    text-align: center; /*alinha o texto no meio do site*/
+    color:bisque; /*faz com que a cor do texto mude para a cor especificada*/
+    margin: 15px;
+    letter-spacing: 4px;    
+}
+
+.textos{
+    margin: 30px;
+    border: black solid 1px;
+    padding: 50px;
+}
+
+.textos input{
+    margin: 10px 0 10px 0;
+
+} 
+
+.margin-registro{
+    margin-right: 80px;
+
+}
+
+.butao{
+    width: 100px; /*tamanho da largura da div no caso*/
+    height: 50px; /*altura de todos os inputs do site*/
+    cursor: pointer; /*faz com que quando o mouse passe em cima ele fique com a maozinha para clicar*/ 
+    border-radius: 15px; /*faz com que as bordas da div fiquem arredondadas*/
+    background-color: chartreuse;  /*cor de fundo*/
+}
+
+
+.textos h1{
+    margin-bottom: 15px;
+}
+
+a{
+    width: 15px;
+    color: black;
+    background-color: cornflowerblue;
+    
+
+}
